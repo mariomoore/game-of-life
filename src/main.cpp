@@ -51,11 +51,11 @@ int main()
 
     system("clear");
 
-    std::size_t frame = 1;
+    std::size_t generation = 0;
     while(!_kbhit())
     {
         setCoordinates();
-        std::cout << "Frame: " << frame++ << std::endl;
+        std::cout << "Generation: " << generation++ << std::endl;
         board.printBoard();
         board.updateBoard();
         usleep(500000);

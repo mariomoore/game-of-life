@@ -9,4 +9,4 @@ set(SOURCES
 
 add_executable(${CMAKE_PROJECT_NAME} ${SOURCES})
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/include)
-add_compile_options(-Wall -Wextra -pedantic -Werror)
+target_compile_options(${CMAKE_PROJECT_NAME} PUBLIC -Wall -Wextra -pedantic -Werror)
